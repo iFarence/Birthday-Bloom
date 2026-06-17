@@ -103,7 +103,7 @@ export default function WishesWall() {
               {wishes.length === 0 ? (
                 <div className="flex flex-col items-center gap-2 py-16 text-center">
                   <i className="ti ti-heart text-blush text-3xl" aria-hidden="true" />
-                  <p className="font-serif italic text-rosewood text-sm">Jadilah yang pertama menitipkan bunga!</p>
+                  <p className="font-serif italic text-midnight text-sm[5px]">Jadilah yang pertama menitipkan bunga!</p>
                 </div>
               ) : (
                 wishes.map((w, idx) => (

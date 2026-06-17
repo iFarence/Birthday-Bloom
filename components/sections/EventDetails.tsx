@@ -139,10 +139,7 @@ export default function DetailAcaraCountdown() {
       `}</style>
 
       <div style={{ background: watercolorBg, position: 'relative' }}>
-
-        {/* Border frame — mencakup seluruh div dari Event Details sampai Lokasi */}
         <Image src="/images/ribbon-border1.png" alt="" fill aria-hidden="true" style={{ objectFit: 'fill', mixBlendMode: 'multiply', opacity: 0.25, pointerEvents: 'none', zIndex: 0, }} />
-
         {/*Event Details*/}
         <section ref={sectionRef} style={{ padding: '64px 24px', position: 'relative', zIndex: 1 }}>
           <div className="flex flex-col items-center gap-6 text-center">
@@ -153,23 +150,20 @@ export default function DetailAcaraCountdown() {
             </div>
             <div className="w-full">
               <p data-anim="month" className="font-sans text-center text-midnight/60 text-xs tracking-[0.3em] uppercase mb-4">{monthYear}</p>
-              <div className="grid grid-cols-3 border border-rosewood/20 rounded-xl overflow-hidden">
-                <div data-anim="card-left" className="flex flex-col items-center py-5 border-r border-rosewood/20">
-                  <p className="font-sans text-midnight/40 text-[10px] tracking-wider uppercase mb-3">{prevDayName}</p>
-                  <p className="font-serif text-3xl text-midnight/40 font-light">{String(prevDay).padStart(2, "0")}</p>
-                </div>
-                <div data-anim="card-center" className="flex flex-col items-center py-5 bg-white relative">
-                  <p className="font-sans text-rosewood text-[10px] tracking-wider uppercase mb-3">{eventData.dayName}</p>
-                  <div className="relative flex items-center justify-center">
-                    <div className="absolute w-14 h-14 rounded-full border-2 border-rosewood/60" />
-                    <p className="font-serif text-3xl text-midnight font-light">{String(dayOfMonth).padStart(2, "0")}</p>
-                  </div>
-                </div>
-                <div data-anim="card-right" className="flex flex-col items-center py-5 border-l border-rosewood/20">
-                  <p className="font-sans text-midnight/40 text-[10px] tracking-wider uppercase mb-3">{nextDayName}</p>
-                  <p className="font-serif text-3xl text-midnight/40 font-light">{String(nextDay).padStart(2, "0")}</p>
-                </div>
-              </div>
+              <div className="flex items-center justify-center gap-3">
+  <div data-anim="card-left" className="flex flex-col items-center gap-2 w-16 h-16 justify-center rounded-xl border border-rosewood/20 bg-white/60">
+    <p className="font-sans text-rosewood text-[9px] tracking-wider uppercase">{prevDayName}</p>
+    <p className="font-serif text-2xl text-midnight/50 font-light">{String(prevDay).padStart(2, "0")}</p>
+  </div>
+  <div data-anim="card-center" className="flex flex-col items-center gap-2 w-20 h-20 justify-center rounded-xl bg-rosewood shadow-md">
+    <p className="font-sans text-white/80 text-[9px] tracking-wider uppercase">{eventData.dayName}</p>
+    <p className="font-serif text-3xl text-white font-light">{String(dayOfMonth).padStart(2, "0")}</p>
+  </div>
+  <div data-anim="card-right" className="flex flex-col items-center gap-2 w-16 h-16 justify-center rounded-xl border border-rosewood/20 bg-white/60">
+    <p className="font-sans text-rosewood text-[9px] tracking-wider uppercase">{nextDayName}</p>
+    <p className="font-serif text-2xl text-midnight/50 font-light">{String(nextDay).padStart(2, "0")}</p>
+  </div>
+</div>
             </div>
             <div className="flex flex-col items-center gap-4">
               <p data-anim="time" className="font-serif text-midnight/70 italic text-lg">{eventData.timeDisplay}</p>
