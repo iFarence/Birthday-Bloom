@@ -151,19 +151,19 @@ export default function DetailAcaraCountdown() {
             <div className="w-full">
               <p data-anim="month" className="font-sans text-center text-midnight/60 text-xs tracking-[0.3em] uppercase mb-4">{monthYear}</p>
               <div className="flex items-center justify-center gap-3">
-  <div data-anim="card-left" className="flex flex-col items-center gap-2 w-16 h-16 justify-center rounded-xl border border-rosewood/20 bg-white/60">
-    <p className="font-sans text-rosewood text-[9px] tracking-wider uppercase">{prevDayName}</p>
-    <p className="font-serif text-2xl text-midnight/50 font-light">{String(prevDay).padStart(2, "0")}</p>
-  </div>
-  <div data-anim="card-center" className="flex flex-col items-center gap-2 w-20 h-20 justify-center rounded-xl bg-rosewood shadow-md">
-    <p className="font-sans text-white/80 text-[9px] tracking-wider uppercase">{eventData.dayName}</p>
-    <p className="font-serif text-3xl text-white font-light">{String(dayOfMonth).padStart(2, "0")}</p>
-  </div>
-  <div data-anim="card-right" className="flex flex-col items-center gap-2 w-16 h-16 justify-center rounded-xl border border-rosewood/20 bg-white/60">
-    <p className="font-sans text-rosewood text-[9px] tracking-wider uppercase">{nextDayName}</p>
-    <p className="font-serif text-2xl text-midnight/50 font-light">{String(nextDay).padStart(2, "0")}</p>
-  </div>
-</div>
+                <div data-anim="card-left" className="flex flex-col items-center gap-2 w-16 h-16 justify-center rounded-xl border border-rosewood/20 bg-white/60">
+                  <p className="font-sans text-rosewood text-[9px] tracking-wider uppercase">{prevDayName}</p>
+                  <p className="font-serif text-2xl text-midnight/50 font-light">{String(prevDay).padStart(2, "0")}</p>
+                </div>
+                <div data-anim="card-center" className="flex flex-col items-center gap-2 w-20 h-20 justify-center rounded-xl bg-rosewood shadow-md">
+                  <p className="font-sans text-white/80 text-[9px] tracking-wider uppercase">{eventData.dayName}</p>
+                  <p className="font-serif text-3xl text-white font-light">{String(dayOfMonth).padStart(2, "0")}</p>
+                </div>
+                <div data-anim="card-right" className="flex flex-col items-center gap-2 w-16 h-16 justify-center rounded-xl border border-rosewood/20 bg-white/60">
+                  <p className="font-sans text-rosewood text-[9px] tracking-wider uppercase">{nextDayName}</p>
+                  <p className="font-serif text-2xl text-midnight/50 font-light">{String(nextDay).padStart(2, "0")}</p>
+                </div>
+              </div>
             </div>
             <div className="flex flex-col items-center gap-4">
               <p data-anim="time" className="font-serif text-midnight/70 italic text-lg">{eventData.timeDisplay}</p>
@@ -210,7 +210,7 @@ export default function DetailAcaraCountdown() {
         </section>
 
         {/*Location*/}
-        <section ref={lokasiRef} id="lokasi" style={{ padding: '0 24px 64px', position: 'relative', zIndex: 1 }}>
+        <section ref={lokasiRef} style={{ padding: '0 24px 64px', position: 'relative', zIndex: 1 }}>
           <div className="flex flex-col items-center gap-8">
             <div className="flex flex-col items-center gap-2 text-center">
               <p data-anim="lok-label" className="font-sans text-rosewood text-xs tracking-[0.3em] uppercase">Lokasi Acara</p>
