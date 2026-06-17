@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import Image from 'next/image'
 import { eventData } from '@/constants/data'
 
 interface TimeLeft {
@@ -137,10 +138,13 @@ export default function DetailAcaraCountdown() {
         }
       `}</style>
 
-      <div style={{ background: watercolorBg }}>
+      <div style={{ background: watercolorBg, position: 'relative' }}>
+
+        {/* Border frame — mencakup seluruh div dari Event Details sampai Lokasi */}
+        <Image src="/images/ribbon-border1.png" alt="" fill aria-hidden="true" style={{ objectFit: 'fill', mixBlendMode: 'multiply', opacity: 0.25, pointerEvents: 'none', zIndex: 0, }} />
 
         {/*Event Details*/}
-        <section ref={sectionRef} style={{ padding: '64px 24px' }}>
+        <section ref={sectionRef} style={{ padding: '64px 24px', position: 'relative', zIndex: 1 }}>
           <div className="flex flex-col items-center gap-6 text-center">
             <div className="flex flex-col items-center gap-2">
               <p data-anim="label" className="font-sans text-rosewood text-xs tracking-[0.3em] uppercase">simpan tanggalnya</p>
@@ -186,7 +190,7 @@ export default function DetailAcaraCountdown() {
         </section>
 
         {/*Countdown*/}
-        <section ref={countdownRef} style={{ padding: '0 24px 64px' }}>
+        <section ref={countdownRef} style={{ padding: '0 24px 64px', position: 'relative', zIndex: 1 }}>
           <div className="max-w-3xl mx-auto text-center flex flex-col items-center gap-10">
             <div className="flex flex-col items-center gap-2">
               <p data-anim="cd-label" className="font-sans text-rosewood text-xs tracking-[0.3em] uppercase">Menuju Hari Istimewa</p>
@@ -212,7 +216,7 @@ export default function DetailAcaraCountdown() {
         </section>
 
         {/*Location*/}
-        <section ref={lokasiRef} id="lokasi" style={{ padding: '0 24px 64px' }}>
+        <section ref={lokasiRef} id="lokasi" style={{ padding: '0 24px 64px', position: 'relative', zIndex: 1 }}>
           <div className="flex flex-col items-center gap-8">
             <div className="flex flex-col items-center gap-2 text-center">
               <p data-anim="lok-label" className="font-sans text-rosewood text-xs tracking-[0.3em] uppercase">Lokasi Acara</p>

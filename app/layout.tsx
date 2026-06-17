@@ -39,7 +39,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id">
-      <body className={`${dmSans.variable} ${cormorant.variable} ${greatVibes.variable} font-sans antialiased`}>{children}</body>
+      <body className={`${dmSans.variable} ${cormorant.variable} ${greatVibes.variable} font-sans antialiased`}>
+        {children}
+      </body>
     </html>
   )
 }
