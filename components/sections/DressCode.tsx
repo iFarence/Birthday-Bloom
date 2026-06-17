@@ -60,7 +60,7 @@ export default function DressCode() {
         [data-anim].dc-visible { opacity: 1; transform: translateY(0) scale(1); }
       `}</style>
 
-      <section ref={sectionRef} id="dresscode" className="py-20 px-6" style={{ background: 'linear-gradient(180deg, #F5F0FB 0%, #F8F4FD 50%, #FDE8EC 100%)' }}>
+      <section ref={sectionRef} className="py-20 px-6" style={{ background: 'linear-gradient(180deg, #F5F0FB 0%, #F8F4FD 50%, #FDE8EC 100%)' }}>
         <div className="max-w-3xl mx-auto flex flex-col items-center gap-10 text-center">
           <div className="flex flex-col items-center gap-2">
             <p data-anim="dc-label" className="font-sans text-rosewood text-xs tracking-[0.3em] uppercase">dress code</p>
@@ -73,8 +73,9 @@ export default function DressCode() {
             <div className="flex items-end justify-center gap-3 md:gap-5">
               {dressCode.colors.map((color, i) => (
                 <div key={i} data-anim="dc-color" className="flex flex-col items-center gap-2">
-                  <div className="rounded-full border border-black/10 shadow-sm" style={{ backgroundColor: color, width:  i === 0 || i === 4 ? "48px" : i === 1 || i === 3 ? "56px" : "68px", height: i === 0 || i === 4 ? "48px" : i === 1 || i === 3 ? "56px" : "68px" }} />
+                  <div className="rounded-full border border-black/10 shadow-sm" style={{ backgroundColor: color, width: i === 0 || i === 4 ? "48px" : i === 1 || i === 3 ? "56px" : "68px", height: i === 0 || i === 4 ? "48px" : i === 1 || i === 3 ? "56px" : "68px" }} />
                   <p className="font-sans text-[10px] text-midnight/50 tracking-wide max-w-[60px] text-center leading-tight">{dressCode.colorNames[i]}</p>
+                  <p className="font-sans text-[9px] text-midnight/30 tracking-wider uppercase">{color}</p>
                 </div>
               ))}
             </div>

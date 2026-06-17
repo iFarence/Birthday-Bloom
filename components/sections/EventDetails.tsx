@@ -140,7 +140,7 @@ export default function DetailAcaraCountdown() {
       <div style={{ background: watercolorBg }}>
 
         {/*Event Details*/}
-        <section ref={sectionRef} id="acara" style={{ padding: '64px 24px' }}>
+        <section ref={sectionRef} style={{ padding: '64px 24px' }}>
           <div className="flex flex-col items-center gap-6 text-center">
             <div className="flex flex-col items-center gap-2">
               <p data-anim="label" className="font-sans text-rosewood text-xs tracking-[0.3em] uppercase">simpan tanggalnya</p>

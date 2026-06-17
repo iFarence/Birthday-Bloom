@@ -59,7 +59,7 @@ export default function Galeri() {
 
   return (
     <>
-      <section ref={sectionRef} id="galeri" className="pb-10 pt-10 px-6 overflow-hidden" style={{ background: 'linear-gradient(180deg, #FDE8EC 0%, #FFF7E6 100%)' }}>
+      <section ref={sectionRef} className="pb-10 pt-10 px-6 overflow-hidden" style={{ background: 'linear-gradient(180deg, #FDE8EC 0%, #FFF7E6 100%)' }}>
         <div className="max-w-5xl mx-auto flex flex-col items-center gap-3">
           <div className="flex flex-col items-center gap-2 text-center" style={{ opacity: isVisible ? undefined : 0, animation: isVisible ? 'fade-up 0.7s ease-out forwards' : 'none' }}>
             <p className="font-sans text-rosewood text-xs tracking-[0.3em] uppercase">kenangan manis</p>

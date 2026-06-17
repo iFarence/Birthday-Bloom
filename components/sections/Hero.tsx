@@ -25,7 +25,7 @@ export default function Hero({ guestName }: { guestName: string }) {
   })
 
   return (
-    <section id="home" style={{ position: 'relative', display: 'flex', height: '100dvh', width: '100%', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+    <section style={{ position: 'relative', display: 'flex', height: '100dvh', width: '100%', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
         <Image src={eventData.bgHero} alt="" fill priority sizes="100vw" style={{ objectFit: 'cover', objectPosition: 'center' }} />
       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(20,15,10,0.55) 0%, rgba(20,15,10,0.35) 40%, rgba(20,15,10,0.75) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 10, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', padding: '0 24px', textAlign: 'center' }}>

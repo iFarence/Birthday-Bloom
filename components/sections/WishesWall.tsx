@@ -61,7 +61,7 @@ export default function WishesWall() {
   }
 
   return (
-    <section ref={sectionRef} id="ucapan" className="py-20 px-6" style={{ background: 'linear-gradient(180deg, #FFF7E6 0%, #FDE8EC 50%, #E8EFF5 100%)' }}>
+    <section ref={sectionRef} className="py-20 px-6" style={{ background: 'linear-gradient(180deg, #FFF7E6 0%, #FDE8EC 50%, #E8EFF5 100%)' }}>
       <div className="max-w-2xl mx-auto flex flex-col gap-12">
         <div className="flex flex-col items-center gap-2 text-center" style={{ opacity: isVisible ? undefined : 0, animation: isVisible ? 'fade-up 0.7s ease-out forwards' : 'none' }}>
           <p className="font-sans text-rosewood text-xs tracking-[0.3em] uppercase">titipkan bungamu</p>

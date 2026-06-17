@@ -51,7 +51,7 @@ export default function Profil() {
   ]
 
   return (
-    <section id="profil" ref={sectionRef} className="py-20 px-6" style={{ background: 'linear-gradient(180deg, #FFFFFF 0%, #FEF0F3 55%, #FDE8EC 75%, #FDE8EC 100%)' }}>
+    <section ref={sectionRef} className="py-20 px-6" style={{ background: 'linear-gradient(180deg, #FFFFFF 0%, #FEF0F3 55%, #FDE8EC 75%, #FDE8EC 100%)' }}>
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col items-center gap-12">
           <div className="flex-shrink-0 relative" style={slideLeft}>
