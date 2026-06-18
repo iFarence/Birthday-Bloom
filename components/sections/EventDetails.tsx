@@ -24,7 +24,7 @@ function getTimeLeft(): TimeLeft {
   }
 }
 
-export default function DetailAcaraCountdown() {
+export default function Hero({ guestName }: { guestName: string }) {
   const sectionRef = useRef<HTMLElement>(null)
   const countdownRef = useRef<HTMLElement>(null)
   const lokasiRef = useRef<HTMLElement>(null)
@@ -191,8 +191,8 @@ export default function DetailAcaraCountdown() {
             </div>
             {arrived ? (
               <div className="flex flex-col items-center gap-3">
-                <p className="font-script text-5xl text-rosewood animate-fade-in">Selamat Ulang Tahun!</p>
-                <p className="font-serif text-midnight/60 italic text-sm">Acara telah selesai</p>
+                <p className="font-script text-4xl text-midnight animate-fade-in">Terima kasih {guestName}!</p>
+                <p className="font-serif text-midnight/60 italic text-sm">Acara telah selesai.</p>
               </div>
             ) : (
               <div data-anim="cd-grid" className="grid grid-cols-4 gap-4 md:gap-8 w-full">

@@ -20,7 +20,7 @@ export default async function UndanganPage({ searchParams }: Props) {
                 <Hero guestName={guestName} />
                 <MusicPlayer />
                 <Profil/>
-                <DetailAcara />
+                <DetailAcara guestName={guestName} />
                 <DressCode />
                 <Galeri />
                 <WallUcapan />

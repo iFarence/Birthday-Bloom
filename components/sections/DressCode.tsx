@@ -74,13 +74,13 @@ export default function DressCode() {
               {dressCode.colors.map((color, i) => (
                 <div key={i} data-anim="dc-color" className="flex flex-col items-center gap-2">
                   <div className="rounded-full border border-black/10 shadow-sm" style={{ backgroundColor: color, width: i === 0 || i === 4 ? "48px" : i === 1 || i === 3 ? "56px" : "68px", height: i === 0 || i === 4 ? "48px" : i === 1 || i === 3 ? "56px" : "68px" }} />
-                  <p className="font-sans text-[10px] text-midnight/50 tracking-wide max-w-[60px] text-center leading-tight">{dressCode.colorNames[i]}</p>
-                  <p className="font-sans text-[9px] text-midnight/30 tracking-wider uppercase">{color}</p>
+                  <p className="font-sans text-[10px] text-midnight/70 tracking-wide max-w-[60px] text-center leading-tight">{dressCode.colorNames[i]}</p>
+                  <p className="font-sans text-[9px] text-midnight/60 tracking-wider uppercase">{color}</p>
                 </div>
               ))}
             </div>
           </div>
-          <p data-anim="dc-note" className="font-serif italic text-midnight/40 text-sm">*Hindari warna hitam dan merah pekat</p>
+          <p data-anim="dc-note" className="font-serif italic text-midnight/50 text-sm">*Hindari warna hitam dan merah pekat</p>
         </div>
       </section>
     </>

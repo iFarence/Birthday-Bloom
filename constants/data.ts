@@ -3,7 +3,7 @@ export const eventData = {
     age: 17,
     nickname: 'Ifarence',
 
-    eventDate: '2026-11-10T09:00:00',
+    eventDate: '2026-06-10T09:00:00',
     dayName: 'Selasa',
     dateDisplay: '10 November 2026',
     timeDisplay: '09.00 WIB - selesai',
