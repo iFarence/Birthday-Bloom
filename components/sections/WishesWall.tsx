@@ -116,7 +116,7 @@ export default function WishesWall() {
                         <p className="font-sans text-midnight text-sm font-medium tracking-wide truncate">{w.name}</p>
                         <p className="font-sans text-midnight/30 text-xs flex-shrink-0">{w.time}</p>
                       </div>
-                      <p className="font-serif italic text-midnight/65 text-sm leading-relaxed">{w.message}</p>
+                      <p className="font-serif italic text-midnight/60 text-sm leading-relaxed">{w.message}</p>
                     </div>
                   </div>
                 ))
